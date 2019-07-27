@@ -32,25 +32,23 @@ final class ListViewModel {
         self.imageRepository = imageRepository
     }
 
-    func fetchFirstPage(location: Location?, completion: @escaping () -> Void) {
+    func fetchFirstPage(location: Location?, forceRefresh: Bool = false, completion: @escaping (Bool) -> Void) {
         self.location = location
-        guard state == .stopped else { return }
+        guard forceRefresh || state == .stopped else { return completion(false) }
         state = .loading
         repository.getList(from: location) { result in
             do {
                 let placeResponse = try result.get()
                 self.state = .success
-                let places = (self.placeResponse?.results ?? []) + placeResponse.results
                 self.placeResponse = placeResponse
-                self.placeResponse?.results = places
             } catch {
                 self.state = .stopped
             }
-            completion()
+            completion(true)
         }
     }
 
-    func fetchNextPage(completion: @escaping (Range<Int>?) -> Void) {
+    func fetchNextPage(completion: @escaping () -> Void) {
         guard state != .loading else { return }
         guard let pageToken = placeResponse?.nextPageToken else { return }
         state = .loading
@@ -60,13 +58,12 @@ final class ListViewModel {
                 self.state = .success
                 let previousPlaces = (self.placeResponse?.results ?? [])
                 let places = previousPlaces + placeResponse.results
-                let range = previousPlaces.count..<(previousPlaces.count + placeResponse.results.count)
                 self.placeResponse = placeResponse
                 self.placeResponse?.results = places
-                completion(range)
+                completion()
             } catch {
                 self.state = .failure(error)
-                completion(nil)
+                completion()
             }
         }
     }

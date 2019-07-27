@@ -11,9 +11,11 @@ import Foundation
 struct PhotoRequest: Encodable {
     let reference: String
     let key: String = Constants.googlePlacesAPIKey.rawValue
+    let maxWidth: Float
 
     enum CodingKeys: String, CodingKey {
         case reference = "photoreference"
         case key
+        case maxWidth = "maxwidth"
     }
 }

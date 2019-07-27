@@ -10,9 +10,19 @@ import CoreLocation
 import UIKit
 
 final class ListViewController: UIViewController {
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.addSubview(refreshControl)
+        }
+    }
     @IBOutlet weak var emptyView: UIView!
+    @IBOutlet weak var loadingView: UIView!
 
+    lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refreshChanged), for: .valueChanged)
+        return refreshControl
+    }()
     lazy var locationManager: CLLocationManager = {
         let manager = CLLocationManager()
         manager.delegate = self
@@ -26,21 +36,45 @@ final class ListViewController: UIViewController {
         askLocation()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let indexPath = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: indexPath, animated: animated)
+        }
+    }
+
     func askLocation() {
         locationManager.requestWhenInUseAuthorization()
     }
 
-    func fetchFirstPage(cllocation: CLLocation?) {
+    func fetchFirstPage(cllocation: CLLocation?, forceRefresh: Bool) {
         let location = Location(location: cllocation)
-        viewModel.fetchFirstPage(location: location) { [weak self] in
+        startLoading()
+        viewModel.fetchFirstPage(location: location, forceRefresh: forceRefresh) { [weak self] shouldUpdate in
+            self?.stopLoading()
+            guard shouldUpdate else { return }
             self?.updateUI()
         }
     }
 
     func fetchNextPage() {
-        viewModel.fetchNextPage { [weak self] newRange in
-            guard let range = newRange else { return }
-            self?.updateUI(with: range)
+        viewModel.fetchNextPage { [weak self] in
+            self?.updateUI()
+        }
+    }
+
+    func startLoading() {
+        DispatchQueue.main.async {
+            self.tableView.backgroundView = self.loadingView
+        }
+    }
+
+    func stopLoading() {
+        DispatchQueue.main.async {
+            if self.refreshControl.isRefreshing {
+                self.refreshControl.endRefreshing()
+            }
+            self.tableView.backgroundView = nil
         }
     }
 
@@ -55,10 +89,20 @@ final class ListViewController: UIViewController {
         }
     }
 
-    func updateUI(with range: Range<Int>) {
-        DispatchQueue.main.async {
-            let indexPaths = range.map { IndexPath(row: $0, section: 0) }
-            self.tableView.insertRows(at: indexPaths, with: .automatic)
+    @objc
+    func refreshChanged() {
+        fetchFirstPage(cllocation: locationManager.location, forceRefresh: true)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        if let detailViewController = segue.destination as? DetailViewController,
+            let cell = sender as? UITableViewCell,
+            let indexPath = tableView.indexPath(for: cell),
+            let place = viewModel.getPlace(at: indexPath) {
+            detailViewController.viewModel = DetailViewModel(place: place,
+                                                             repository: PhotoRemoteRepository(),
+                                                             imageRepository: ImageRemoteRepository())
         }
     }
 }
@@ -95,7 +139,7 @@ extension ListViewController: CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-            self.fetchFirstPage(cllocation: manager.location ?? locations.first)
+            self.fetchFirstPage(cllocation: manager.location ?? locations.first, forceRefresh: false)
         }
     }
 

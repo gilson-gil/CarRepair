@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import MapKit
 
-struct Place: Decodable {
+final class Place: NSObject, Decodable {
     let location: Location
     let icon: String?
     let identifier: String
@@ -61,8 +62,14 @@ struct Place: Decodable {
     }
 }
 
-extension Place: Equatable {
+extension Place {
     static func == (lhs: Place, rhs: Place) -> Bool {
         return lhs.placeId == rhs.placeId
+    }
+}
+
+extension Place: MKAnnotation {
+    var coordinate: CLLocationCoordinate2D {
+        return .init(latitude: location.latitude, longitude: location.longitude)
     }
 }

@@ -24,7 +24,7 @@ extension ListItemCell: Updatable {
                 self?.iconImageView.image = (try? result.get())?.withRenderingMode(.alwaysTemplate)
             }
         }
-        nameLabel.text = viewModel.name
+        nameLabel.text = viewModel.name.capitalized
         openView.backgroundColor = viewModel.isOpen ? .green : .red
         distanceLabel.text = viewModel.distance
         addressLabel.text = viewModel.address

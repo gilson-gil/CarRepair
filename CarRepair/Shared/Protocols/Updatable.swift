@@ -25,8 +25,18 @@ struct CellConfigurator<Cell> where Cell: Updatable & ReuseIdentifiable {
         }
     }
 
+    func update(_ cell: UICollectionViewCell) {
+        if let cell = cell as? Cell {
+            cell.update(viewModel)
+        }
+    }
+
     func register(_ tableView: UITableView?) {
         tableView?.register(cellClass, forCellReuseIdentifier: Cell.reuseIdentifier)
+    }
+
+    func register(_ collectionView: UICollectionView?) {
+        collectionView?.register(cellClass, forCellWithReuseIdentifier: Cell.reuseIdentifier)
     }
 }
 
@@ -36,11 +46,21 @@ protocol CellConfiguratorType {
 
     func update(_ cell: UITableViewCell)
     func register(_ tableView: UITableView?)
+    func update(_ cell: UICollectionViewCell)
+    func register(_ collectionView: UICollectionView?)
 }
 
 extension CellConfigurator: CellConfiguratorType {}
 
 extension UITableView {
+    func register(_ configurators: [CellConfiguratorType?]?) {
+        configurators?.forEach {
+            $0?.register(self)
+        }
+    }
+}
+
+extension UICollectionView {
     func register(_ configurators: [CellConfiguratorType?]?) {
         configurators?.forEach {
             $0?.register(self)

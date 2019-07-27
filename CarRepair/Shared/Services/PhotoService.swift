@@ -42,7 +42,7 @@ extension PhotoService: Service {
     var parameters: Parameters? {
         switch self {
         case .download(let reference):
-            return PhotoRequest(reference: reference).parameters
+            return PhotoRequest(reference: reference, maxWidth: 400).parameters
         }
     }
 }

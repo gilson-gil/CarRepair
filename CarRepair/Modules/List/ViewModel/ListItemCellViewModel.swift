@@ -17,11 +17,11 @@ struct ListItemCellViewModel {
     let imageRepository: ImageRepository
 
     init(place: Place, placeDistance: String, imageRepository: ImageRepository) {
-        iconURL = place.icon ?? ""
-        name = place.name
+        iconURL = place.icon.valid
+        name = place.name.capitalized
         isOpen = place.isOpen ?? false
         distance = placeDistance
-        address = place.address
+        address = place.address.capitalized
         self.imageRepository = imageRepository
     }
 }
