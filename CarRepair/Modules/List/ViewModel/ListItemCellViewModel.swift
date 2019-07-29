@@ -15,13 +15,15 @@ struct ListItemCellViewModel {
     let distance: String
     let address: String
     let imageRepository: ImageRepository
+    let isDetail: Bool
 
-    init(place: Place, placeDistance: String, imageRepository: ImageRepository) {
+    init(place: Place, placeDistance: String, imageRepository: ImageRepository, isDetail: Bool) {
         iconURL = place.icon.valid
         name = place.name.capitalized
         isOpen = place.isOpen ?? false
         distance = placeDistance
         address = place.address.capitalized
         self.imageRepository = imageRepository
+        self.isDetail = isDetail
     }
 }

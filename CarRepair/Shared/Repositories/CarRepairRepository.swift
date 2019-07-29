@@ -22,4 +22,6 @@ protocol CarRepairRepository {
                  completion: @escaping (Result<PlaceResponse, CarRepairRepositoryError>) -> Void)
     func getList(with token: String,
                  completion: @escaping (Result<PlaceResponse, CarRepairRepositoryError>) -> Void)
+    func getDetails(for placeId: String,
+                    completion: @escaping (Result<Place, HTTPError>) -> Void)
 }

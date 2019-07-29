@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MapCell" rowHeight="251" id="PO4-qE-84r" customClass="MapCell" customModule="CarRepair" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="251"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PO4-qE-84r" id="ZK8-tV-ZwY">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="250.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsBuildings="NO" showsCompass="NO" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nLp-Ln-W4x">
+                        <rect key="frame" x="20" y="12" width="374" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="qCu-An-mFC"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="delegate" destination="PO4-qE-84r" id="kxW-cV-uPY"/>
+                        </connections>
+                    </mapView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nLp-Ln-W4x" firstAttribute="leading" secondItem="ZK8-tV-ZwY" secondAttribute="leading" constant="20" id="ZNh-PT-rBS"/>
+                    <constraint firstItem="nLp-Ln-W4x" firstAttribute="top" secondItem="ZK8-tV-ZwY" secondAttribute="top" constant="12" id="bg2-aS-mju"/>
+                    <constraint firstAttribute="bottom" secondItem="nLp-Ln-W4x" secondAttribute="bottom" constant="12" id="owC-mD-IgX"/>
+                    <constraint firstAttribute="trailing" secondItem="nLp-Ln-W4x" secondAttribute="trailing" constant="20" id="teJ-EP-VcE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mapView" destination="nLp-Ln-W4x" id="X77-n8-tFK"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="64.620535714285708"/>
+        </tableViewCell>
+    </objects>
+</document>

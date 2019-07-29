@@ -37,4 +37,18 @@ struct CarRepairRemoteRepository: CarRepairRepository {
                 completion(.success(nonEmpty))
         }
     }
+
+    func getDetails(for placeId: String,
+                    completion: @escaping (Result<Place, HTTPError>) -> Void) {
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        engine.request(
+            target: CarRepairService.details(placeId),
+            decoder: decoder) { (result: Result<PlaceDetailsResponse?, HTTPError>) in
+                guard case let .success(response) = result, let place = response?.result else {
+                    return completion(.failure(.unknown))
+                }
+                completion(.success(place))
+        }
+    }
 }

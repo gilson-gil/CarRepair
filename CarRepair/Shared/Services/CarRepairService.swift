@@ -25,6 +25,7 @@ enum CarRepairServiceError: LocalizedError {
 enum CarRepairService {
     case list(Location)
     case nextPage(String)
+    case details(String)
 }
 
 extension CarRepairService: Service {
@@ -36,6 +37,8 @@ extension CarRepairService: Service {
         switch self {
         case .list, .nextPage:
             return "/maps/api/place/nearbysearch/json"
+        case .details:
+            return "/maps/api/place/details/json"
         }
     }
 
@@ -49,6 +52,8 @@ extension CarRepairService: Service {
             return PlaceRequest(location: location, types: "car_repair").parameters
         case .nextPage(let token):
             return PlaceNextPageRequest(pagetoken: token).parameters
+        case .details(let placeId):
+            return PlaceDetailsRequest(placeId: placeId).parameters
         }
     }
 }

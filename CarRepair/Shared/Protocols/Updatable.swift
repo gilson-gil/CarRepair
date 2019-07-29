@@ -31,8 +31,13 @@ struct CellConfigurator<Cell> where Cell: Updatable & ReuseIdentifiable {
         }
     }
 
-    func register(_ tableView: UITableView?) {
-        tableView?.register(cellClass, forCellReuseIdentifier: Cell.reuseIdentifier)
+    func register(_ tableView: UITableView?, nib: Bool = false) {
+        if nib {
+            tableView?.register(.init(nibName: Cell.reuseIdentifier, bundle: nil),
+                                forCellReuseIdentifier: Cell.reuseIdentifier)
+        } else {
+            tableView?.register(cellClass, forCellReuseIdentifier: Cell.reuseIdentifier)
+        }
     }
 
     func register(_ collectionView: UICollectionView?) {
@@ -45,7 +50,7 @@ protocol CellConfiguratorType {
     var reuseIdentifier: String { get }
 
     func update(_ cell: UITableViewCell)
-    func register(_ tableView: UITableView?)
+    func register(_ tableView: UITableView?, nib: Bool)
     func update(_ cell: UICollectionViewCell)
     func register(_ collectionView: UICollectionView?)
 }
@@ -55,7 +60,7 @@ extension CellConfigurator: CellConfiguratorType {}
 extension UITableView {
     func register(_ configurators: [CellConfiguratorType?]?) {
         configurators?.forEach {
-            $0?.register(self)
+            $0?.register(self, nib: true)
         }
     }
 }

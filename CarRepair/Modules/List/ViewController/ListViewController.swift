@@ -9,12 +9,17 @@
 import CoreLocation
 import UIKit
 
+enum FilterState {
+    case open, closed
+}
+
 final class ListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.addSubview(refreshControl)
         }
     }
+    @IBOutlet weak var containerHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var emptyView: UIView!
     @IBOutlet weak var loadingView: UIView!
 
@@ -28,6 +33,7 @@ final class ListViewController: UIViewController {
         manager.delegate = self
         return manager
     }()
+    var filterState: FilterState = .closed
     var viewModel: ListViewModel = ListViewModel(repository: CarRepairRemoteRepository(),
                                                  imageRepository: ImageRemoteRepository())
 
@@ -80,6 +86,7 @@ final class ListViewController: UIViewController {
 
     func updateUI() {
         DispatchQueue.main.async {
+            self.tableView.register(self.viewModel.cellConfigurators)
             self.tableView.reloadData()
             if self.viewModel.cellConfigurators.isEmpty, case .failure = self.viewModel.state {
                 self.tableView.backgroundView = self.emptyView
@@ -94,14 +101,29 @@ final class ListViewController: UIViewController {
         fetchFirstPage(cllocation: locationManager.location, forceRefresh: true)
     }
 
+    @IBAction func filterTapped() {
+        switch filterState {
+        case .closed:
+            containerHeightConstraint.constant = 150
+            filterState = .open
+        case .open:
+            containerHeightConstraint.constant = 0
+            filterState = .closed
+        }
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseInOut, animations: {
+            self.view.layoutIfNeeded()
+        }, completion: nil)
+    }
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         if let detailViewController = segue.destination as? DetailViewController,
-            let cell = sender as? UITableViewCell,
-            let indexPath = tableView.indexPath(for: cell),
+            let indexPath = sender as? IndexPath,
             let place = viewModel.getPlace(at: indexPath) {
             detailViewController.viewModel = DetailViewModel(place: place,
-                                                             repository: PhotoRemoteRepository(),
+                                                             location: viewModel.location,
+                                                             repository: CarRepairRemoteRepository(),
+                                                             photoRepository: PhotoRemoteRepository(),
                                                              imageRepository: ImageRemoteRepository())
         }
     }
@@ -122,6 +144,13 @@ extension ListViewController: UITableViewDataSource {
 }
 
 // MARK: - UITableView Delegate
+extension ListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "detailsSegue", sender: indexPath)
+    }
+}
+
+// MARK: - UIScrollView Delegate
 extension ListViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.y > scrollView.contentSize.height - scrollView.bounds.height {

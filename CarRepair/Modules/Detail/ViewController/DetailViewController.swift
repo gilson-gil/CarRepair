@@ -11,14 +11,7 @@ import MapKit
 import UIKit
 
 final class DetailViewController: UIViewController {
-    @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var addressLabel: UILabel!
-    @IBOutlet weak var distanceLabel: UILabel!
-    @IBOutlet weak var mapView: MKMapView! {
-        didSet {
-            mapView.layer.cornerRadius = 8
-        }
-    }
+    @IBOutlet weak var tableView: UITableView!
 
     var locationManager: CLLocationManager = .init()
     var viewModel: DetailViewModel!
@@ -26,26 +19,17 @@ final class DetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         updateUI()
+        viewModel.fetchDetails { [weak self] in
+            DispatchQueue.main.async {
+                self?.updateUI()
+            }
+        }
     }
 
     func updateUI() {
         navigationItem.title = viewModel.placeName
-        collectionView.isHidden = viewModel.placePhotos.isEmpty
-        addressLabel.text = viewModel.placeAddress
-        let distance: Double?
-        let placeLocation = viewModel.placeLocation
-        if let location = locationManager.location {
-            distance = location.distance(from: .init(latitude: placeLocation.latitude,
-                                                     longitude: placeLocation.longitude))
-        } else {
-            distance = nil
-        }
-        let distanceString: String = DistanceFormatter().format(value: distance)
-        distanceLabel.text = distanceString
-        let center: CLLocationCoordinate2D = .init(latitude: placeLocation.latitude, longitude: placeLocation.longitude)
-        let span: MKCoordinateSpan = .init(latitudeDelta: 0.01, longitudeDelta: 0.01)
-        mapView.region = .init(center: center, span: span)
-        mapView.addAnnotations([viewModel.place])
+        viewModel.configurators.forEach(tableView.register)
+        tableView.reloadData()
         viewModel.getIconImage { [weak navigationItem] image in
             DispatchQueue.main.async {
                 let imageView = UIImageView(image: image?.withRenderingMode(.alwaysTemplate))
@@ -75,34 +59,30 @@ final class DetailViewController: UIViewController {
     }
 }
 
-// MARK: - UICollectionView DataSource
-extension DetailViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.placePhotos.count
+// MARK: - UITableView DataSource
+extension DetailViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return viewModel.numberOfSections
     }
 
-    func collectionView(_ collectionView: UICollectionView,
-                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let configurator = viewModel.photoConfigurators[indexPath.item]
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: configurator.reuseIdentifier, for: indexPath)
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.numberOfRows(at: section)
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let configurator = viewModel.configurator(at: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: configurator.reuseIdentifier, for: indexPath)
         configurator.update(cell)
+        if let mapCell = cell as? MapCell {
+            mapCell.delegate = self
+        }
         return cell
     }
 }
 
-// MARK: - UICollectionView Delegate
-extension DetailViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return collectionView.bounds.size
-    }
-}
-
-// MARK: - MKMapView Delegate
-extension DetailViewController: MKMapViewDelegate {
-    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+// MARK: - MapCell Delegate
+extension DetailViewController: MapCellDelegate {
+    func didTapPresentDirections(at cell: MapCell) {
         presentDirections()
-        mapView.deselectAnnotation(view.annotation, animated: true)
     }
 }

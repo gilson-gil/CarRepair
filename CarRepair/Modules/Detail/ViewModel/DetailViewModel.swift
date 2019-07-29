@@ -6,38 +6,64 @@
 //  Copyright © 2019 Gilson Gil. All rights reserved.
 //
 
+import CoreLocation
 import UIKit
 
-struct DetailViewModel {
-    let place: Place
-    private let repository: PhotoRepository
+final class DetailViewModel {
+    var place: Place
+    private let repository: CarRepairRepository
+    private let photoRepository: PhotoRepository
     private let imageRepository: ImageRepository
-    var photoConfigurators: [CellConfiguratorType]
     var directionsManager: DirectionsManager = .init()
+    let configurators: [[CellConfiguratorType]]
 
-    init(place: Place, repository: PhotoRepository, imageRepository: ImageRepository) {
+    init(place: Place,
+         location: Location?,
+         repository: CarRepairRepository,
+         photoRepository: PhotoRepository,
+         imageRepository: ImageRepository) {
         self.place = place
         self.repository = repository
+        self.photoRepository = photoRepository
         self.imageRepository = imageRepository
-        photoConfigurators = place.photos.map {
-            CellConfigurator<PhotoCell>(viewModel: PhotoCellViewModel(photo: $0, repository: repository))
+        let distance: Double?
+        if let location = location {
+            distance = CLLocation(latitude: location.latitude, longitude: location.longitude)
+                .distance(from: .init(latitude: place.location.latitude, longitude: place.location.longitude))
+        } else {
+            distance = nil
         }
+        let distanceString = DistanceFormatter().format(value: distance)
+        configurators = [
+            [
+                CellConfigurator<PhotosCell>(viewModel: .init(place: place, photoRepository: photoRepository))
+            ],
+            [
+                CellConfigurator<ListItemCell>(viewModel: .init(place: place,
+                                                                placeDistance: distanceString,
+                                                                imageRepository: imageRepository,
+                                                                isDetail: true))
+            ],
+            [
+                CellConfigurator<MapCell>(viewModel: .init(place: place))
+            ]
+        ]
     }
 
     var placeName: String {
         return place.name.capitalized
     }
 
-    var placePhotos: [Photo] {
-        return place.photos
+    var numberOfSections: Int {
+        return configurators.count
     }
 
-    var placeAddress: String {
-        return place.address.capitalized
+    func numberOfRows(at section: Int) -> Int {
+        return configurators[section].count
     }
 
-    var placeLocation: Location {
-        return place.location
+    func configurator(at indexPath: IndexPath) -> CellConfiguratorType {
+        return configurators[indexPath.section][indexPath.row]
     }
 
     func getIconImage(completion: @escaping (UIImage?) -> Void) {
@@ -49,5 +75,13 @@ struct DetailViewModel {
 
     func availableApps() -> [MapsApp] {
         return directionsManager.availableApps()
+    }
+
+    func fetchDetails(completion: @escaping () -> Void) {
+        repository.getDetails(for: place.placeId) { result in
+            guard case let .success(place) = result else { return }
+            self.place = place
+            completion()
+        }
     }
 }

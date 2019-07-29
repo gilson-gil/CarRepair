@@ -28,5 +28,6 @@ extension ListItemCell: Updatable {
         openView.backgroundColor = viewModel.isOpen ? .green : .red
         distanceLabel.text = viewModel.distance
         addressLabel.text = viewModel.address
+        accessoryType = viewModel.isDetail ? .none : .disclosureIndicator
     }
 }

@@ -15,12 +15,15 @@ final class Place: NSObject, Decodable {
     let identifier: String
     let name: String
     let isOpen: Bool?
+    let periods: [String]?
     let photos: [Photo]
     let placeId: String
     let rating: Float?
     let reference: String
     let ratingCount: Int
     let address: String
+    let phoneNumber: String?
+    let reviews: [Review]?
 
     enum CodingKeys: String, CodingKey {
         case location = "geometry"
@@ -34,6 +37,8 @@ final class Place: NSObject, Decodable {
         case reference
         case ratingCount = "userRatingsTotal"
         case address = "vicinity"
+        case phoneNumber = "formatted_phone_number"
+        case reviews
     }
 
     enum GeometryCodingKeys: String, CodingKey {
@@ -42,6 +47,7 @@ final class Place: NSObject, Decodable {
 
     enum OpeningHoursCodingKeys: String, CodingKey {
         case openNow
+        case periods = "weekday_text"
     }
 
     init(from decoder: Decoder) throws {
@@ -53,12 +59,15 @@ final class Place: NSObject, Decodable {
         name = try container.decode(String.self, forKey: .name)
         let openingHours = try? container.nestedContainer(keyedBy: OpeningHoursCodingKeys.self, forKey: .isOpen)
         isOpen = try openingHours?.decodeIfPresent(Bool.self, forKey: .openNow)
+        periods = try openingHours?.decodeIfPresent([String].self, forKey: .periods)
         photos = try container.decodeIfPresent([Photo].self, forKey: .photos) ?? []
         placeId = try container.decode(String.self, forKey: .placeId)
         rating = try container.decodeIfPresent(Float.self, forKey: .rating)
         reference = try container.decode(String.self, forKey: .reference)
         ratingCount = try container.decodeIfPresent(Int.self, forKey: .ratingCount) ?? 0
         address = try container.decode(String.self, forKey: .address)
+        phoneNumber = try container.decodeIfPresent(String.self, forKey: .phoneNumber)
+        reviews = try container.decodeIfPresent([Review].self, forKey: .reviews)
     }
 }
 

@@ -94,6 +94,7 @@ final class ListViewModel {
         let distanceString = distanceFormatter.format(value: distance)
         return CellConfigurator<ListItemCell>(viewModel: ListItemCellViewModel(place: place,
                                                                                placeDistance: distanceString,
-                                                                               imageRepository: imageRepository))
+                                                                               imageRepository: imageRepository,
+                                                                               isDetail: false))
     }
 }
