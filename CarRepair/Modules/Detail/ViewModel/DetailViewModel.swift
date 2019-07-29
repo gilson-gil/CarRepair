@@ -10,12 +10,17 @@ import CoreLocation
 import UIKit
 
 final class DetailViewModel {
-    var place: Place
+    var place: Place {
+        didSet {
+            refreshConfigurators()
+        }
+    }
+    var location: Location?
     private let repository: CarRepairRepository
     private let photoRepository: PhotoRepository
     private let imageRepository: ImageRepository
     var directionsManager: DirectionsManager = .init()
-    let configurators: [[CellConfiguratorType]]
+    var configurators: [[CellConfiguratorType]]
 
     init(place: Place,
          location: Location?,
@@ -23,31 +28,12 @@ final class DetailViewModel {
          photoRepository: PhotoRepository,
          imageRepository: ImageRepository) {
         self.place = place
+        self.location = location
         self.repository = repository
         self.photoRepository = photoRepository
         self.imageRepository = imageRepository
-        let distance: Double?
-        if let location = location {
-            distance = CLLocation(latitude: location.latitude, longitude: location.longitude)
-                .distance(from: .init(latitude: place.location.latitude, longitude: place.location.longitude))
-        } else {
-            distance = nil
-        }
-        let distanceString = DistanceFormatter().format(value: distance)
-        configurators = [
-            [
-                CellConfigurator<PhotosCell>(viewModel: .init(place: place, photoRepository: photoRepository))
-            ],
-            [
-                CellConfigurator<ListItemCell>(viewModel: .init(place: place,
-                                                                placeDistance: distanceString,
-                                                                imageRepository: imageRepository,
-                                                                isDetail: true))
-            ],
-            [
-                CellConfigurator<MapCell>(viewModel: .init(place: place))
-            ]
-        ]
+        self.configurators = []
+        refreshConfigurators()
     }
 
     var placeName: String {
@@ -83,5 +69,37 @@ final class DetailViewModel {
             self.place = place
             completion()
         }
+    }
+
+    func refreshConfigurators() {
+        let distance: Double?
+        if let location = location {
+            distance = CLLocation(latitude: location.latitude, longitude: location.longitude)
+                .distance(from: .init(latitude: place.location.latitude, longitude: place.location.longitude))
+        } else {
+            distance = nil
+        }
+        let distanceString = DistanceFormatter().format(value: distance)
+        configurators = [
+            [
+                CellConfigurator<ListItemCell>(viewModel: .init(place: place,
+                                                                placeDistance: distanceString,
+                                                                imageRepository: imageRepository,
+                                                                isDetail: true))
+            ],
+            [
+                CellConfigurator<MapCell>(viewModel: .init(place: place))
+            ],
+            place.reviews?.map {
+                CellConfigurator<ReviewCell>(viewModel: .init(review: $0, imageRepository: imageRepository))
+                } ?? []
+        ]
+        if !place.photos.isEmpty {
+            configurators.insert([
+                CellConfigurator<PhotosCell>(viewModel: .init(place: place, photoRepository: photoRepository))
+            ],
+                                 at: 0)
+        }
+        print("hhh did refresh")
     }
 }

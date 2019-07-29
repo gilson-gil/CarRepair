@@ -29,6 +29,7 @@ final class DetailViewController: UIViewController {
     func updateUI() {
         navigationItem.title = viewModel.placeName
         viewModel.configurators.forEach(tableView.register)
+        print("hhh did register")
         tableView.reloadData()
         viewModel.getIconImage { [weak navigationItem] image in
             DispatchQueue.main.async {
