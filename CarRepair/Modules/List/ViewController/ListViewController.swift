@@ -50,10 +50,19 @@ final class ListViewController: UIViewController {
     func fetchFirstPage(cllocation: CLLocation?, forceRefresh: Bool) {
         let location = Location(location: cllocation)
         startLoading()
-        viewModel.fetchFirstPage(location: location, forceRefresh: forceRefresh) { [weak self] shouldUpdate in
+        viewModel.fetchFirstPage(location: location, forceRefresh: forceRefresh) { [weak self] result in
             self?.stopLoading()
-            guard shouldUpdate else { return }
-            self?.updateUI()
+            switch result {
+            case .success(let shouldUpdate):
+                guard shouldUpdate else { return }
+                self?.updateUI()
+            case .failure(let error):
+                self?.alert(title: nil,
+                            message: error.localizedDescription,
+                            okTitle: "Ok",
+                            okCallback: nil,
+                            cancelTitle: nil)
+            }
         }
     }
 

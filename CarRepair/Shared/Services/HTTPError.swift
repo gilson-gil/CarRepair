@@ -9,6 +9,7 @@
 import Foundation
 
 enum HTTPError: LocalizedError {
+    case noInternet
     case invalidURL
     case invalidJSON
     case urlError(URLError)
@@ -16,6 +17,8 @@ enum HTTPError: LocalizedError {
 
     var errorDescription: String? {
         switch self {
+        case .noInternet:
+            return "Parece que você está sem internet, tente novamente mais tarde"
         case .invalidURL:
             return "URL inválida"
         case .invalidJSON:

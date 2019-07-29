@@ -32,19 +32,28 @@ final class ListViewModel {
         self.imageRepository = imageRepository
     }
 
-    func fetchFirstPage(location: Location?, forceRefresh: Bool = false, completion: @escaping (Bool) -> Void) {
+    func fetchFirstPage(location: Location?,
+                        forceRefresh: Bool = false,
+                        completion: @escaping (Result<Bool, CarRepairError>) -> Void) {
         self.location = location
-        guard forceRefresh || state == .stopped else { return completion(false) }
+        guard forceRefresh || state == .stopped else { return completion(.success(false)) }
         state = .loading
         repository.getList(from: location) { result in
             do {
                 let placeResponse = try result.get()
                 self.state = .success
                 self.placeResponse = placeResponse
+                completion(.success(true))
+            } catch let error as CarRepairError {
+                switch error {
+                case .httpError:
+                    completion(.failure(error))
+                default:
+                    break
+                }
             } catch {
                 self.state = .stopped
             }
-            completion(true)
         }
     }
 

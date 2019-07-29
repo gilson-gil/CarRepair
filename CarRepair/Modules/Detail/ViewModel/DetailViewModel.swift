@@ -100,6 +100,5 @@ final class DetailViewModel {
             ],
                                  at: 0)
         }
-        print("hhh did refresh")
     }
 }

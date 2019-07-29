@@ -9,6 +9,6 @@
 import UIKit
 
 protocol PhotoRepository {
-    func getImage(with reference: String, completion: @escaping (Result<UIImage, HTTPError>) -> Void)
-    func download(with reference: String, completion: @escaping (Result<UIImage, HTTPError>) -> Void)
+    func getImage(with reference: String, completion: @escaping (Result<UIImage, CarRepairError>) -> Void)
+    func download(with reference: String, completion: @escaping (Result<UIImage, CarRepairError>) -> Void)
 }

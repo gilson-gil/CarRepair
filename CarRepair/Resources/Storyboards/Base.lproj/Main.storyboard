@@ -52,7 +52,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Oficinas de Carro" id="vsI-5R-HAf"/>
                     <connections>
-                        <outlet property="containerHeightConstraint" destination="Zou-db-Fjy" id="LWb-iw-5MQ"/>
                         <outlet property="emptyView" destination="7Xj-gb-vED" id="ZKo-rM-UY4"/>
                         <outlet property="loadingView" destination="eSK-nv-9Ca" id="yVV-XU-Q2J"/>
                         <outlet property="tableView" destination="qVn-Zc-5gE" id="1KI-wb-P5e"/>

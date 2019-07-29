@@ -38,7 +38,11 @@ final class NetworkEngine<Target: Service> {
             }
 
             if let urlError = error as? URLError {
-                return completion(.failure(.urlError(urlError)))
+                if urlError.errorCode == NSURLErrorNotConnectedToInternet {
+                    return completion(.failure(.noInternet))
+                } else {
+                    return completion(.failure(.urlError(urlError)))
+                }
             }
             guard error == nil else { return completion(.failure(.unknown)) }
             guard let data = data else { return completion(.success(nil)) }

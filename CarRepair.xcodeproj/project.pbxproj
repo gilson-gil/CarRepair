@@ -22,6 +22,8 @@
 		2B21112922EEA800002B7D02 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21112822EEA800002B7D02 /* ReviewCell.swift */; };
 		2B21112B22EEA856002B7D02 /* ReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B21112A22EEA856002B7D02 /* ReviewCell.xib */; };
 		2B21112D22EEA93E002B7D02 /* ReviewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21112C22EEA93E002B7D02 /* ReviewCellViewModel.swift */; };
+		2B21112F22EEB7E3002B7D02 /* CarRepairError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21112E22EEB7E3002B7D02 /* CarRepairError.swift */; };
+		2B21113122EEBCB1002B7D02 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21113022EEBCB1002B7D02 /* UIViewController+Alert.swift */; };
 		2B35BDDC22E9540B008A70BC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B35BDDB22E9540B008A70BC /* DetailViewController.swift */; };
 		2B35BDDF22E95529008A70BC /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B35BDDE22E95529008A70BC /* DetailViewModel.swift */; };
 		2B35BDE222E95791008A70BC /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B35BDE122E95791008A70BC /* PhotoCell.swift */; };
@@ -86,6 +88,8 @@
 		2B21112822EEA800002B7D02 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		2B21112A22EEA856002B7D02 /* ReviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewCell.xib; sourceTree = "<group>"; };
 		2B21112C22EEA93E002B7D02 /* ReviewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCellViewModel.swift; sourceTree = "<group>"; };
+		2B21112E22EEB7E3002B7D02 /* CarRepairError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRepairError.swift; sourceTree = "<group>"; };
+		2B21113022EEBCB1002B7D02 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		2B35BDDB22E9540B008A70BC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2B35BDDE22E95529008A70BC /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		2B35BDE122E95791008A70BC /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				2B21110022ED2474002B7D02 /* UIColor+Extensions.swift */,
+				2B21113022EEBCB1002B7D02 /* UIViewController+Alert.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -267,8 +272,8 @@
 		2B35C81322E694A2002D1CED /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				2B35BDD922E953FB008A70BC /* Detail */,
 				2B35C81422E694AF002D1CED /* List */,
+				2B35BDD922E953FB008A70BC /* Detail */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 				2B35C82122E69A8F002D1CED /* Location.swift */,
 				2B35C82322E69B09002D1CED /* Photo.swift */,
 				2B21111422ED405F002B7D02 /* Review.swift */,
+				2B21112E22EEB7E3002B7D02 /* CarRepairError.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -555,6 +561,7 @@
 				2B6B6EDA22E6B5620077D747 /* PlaceRequest.swift in Sources */,
 				2B6B6F0122E804E90077D747 /* ImageService.swift in Sources */,
 				2B6B6EED22E7EFEC0077D747 /* UITableVieweCell+ReuseIdentifiable.swift in Sources */,
+				2B21113122EEBCB1002B7D02 /* UIViewController+Alert.swift in Sources */,
 				2B6B6EC322E69DD60077D747 /* Method.swift in Sources */,
 				2B6B6ECE22E6A32E0077D747 /* Engine.swift in Sources */,
 				2B35C82422E69B09002D1CED /* Photo.swift in Sources */,
@@ -584,6 +591,7 @@
 				2B35C82222E69A8F002D1CED /* Location.swift in Sources */,
 				2B21111722ED4BC5002B7D02 /* PlaceDetailsResponse.swift in Sources */,
 				2B35C81D22E697D6002D1CED /* ListViewModel.swift in Sources */,
+				2B21112F22EEB7E3002B7D02 /* CarRepairError.swift in Sources */,
 				2B35BDE422E957BF008A70BC /* PhotoCellViewModel.swift in Sources */,
 				2B6B6EFD22E7FDB10077D747 /* PhotoService.swift in Sources */,
 				2B35C82022E69A6C002D1CED /* Place.swift in Sources */,

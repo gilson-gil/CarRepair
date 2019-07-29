@@ -19,9 +19,9 @@ enum CarRepairRepositoryError: LocalizedError {
 
 protocol CarRepairRepository {
     func getList(from location: Location?,
-                 completion: @escaping (Result<PlaceResponse, CarRepairRepositoryError>) -> Void)
+                 completion: @escaping (Result<PlaceResponse, CarRepairError>) -> Void)
     func getList(with token: String,
-                 completion: @escaping (Result<PlaceResponse, CarRepairRepositoryError>) -> Void)
+                 completion: @escaping (Result<PlaceResponse, CarRepairError>) -> Void)
     func getDetails(for placeId: String,
-                    completion: @escaping (Result<Place, HTTPError>) -> Void)
+                    completion: @escaping (Result<Place, CarRepairError>) -> Void)
 }
