@@ -24,6 +24,18 @@
 		2B21112D22EEA93E002B7D02 /* ReviewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21112C22EEA93E002B7D02 /* ReviewCellViewModel.swift */; };
 		2B21112F22EEB7E3002B7D02 /* CarRepairError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21112E22EEB7E3002B7D02 /* CarRepairError.swift */; };
 		2B21113122EEBCB1002B7D02 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21113022EEBCB1002B7D02 /* UIViewController+Alert.swift */; };
+		2B21114222EEBF87002B7D02 /* ListMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B21114122EEBF87002B7D02 /* ListMock.json */; };
+		2B21114422EEBFA5002B7D02 /* DetailsMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B21114322EEBFA5002B7D02 /* DetailsMock.json */; };
+		2B21114622EEBFBB002B7D02 /* ListNextPageMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B21114522EEBFBB002B7D02 /* ListNextPageMock.json */; };
+		2B21114A22EEC1FA002B7D02 /* CarRepairServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21114922EEC1FA002B7D02 /* CarRepairServiceTests.swift */; };
+		2B21114C22EECACF002B7D02 /* PhotoServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21114B22EECACF002B7D02 /* PhotoServiceTests.swift */; };
+		2B21114E22EECC95002B7D02 /* ImageServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21114D22EECC95002B7D02 /* ImageServiceTests.swift */; };
+		2B21115022EECE0E002B7D02 /* RequestFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21114F22EECE0E002B7D02 /* RequestFactoryTests.swift */; };
+		2B21115522EED599002B7D02 /* CarRepairMockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21115422EED599002B7D02 /* CarRepairMockRepository.swift */; };
+		2B21115922EED70F002B7D02 /* ListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21115822EED70F002B7D02 /* ListViewModelTests.swift */; };
+		2B21115B22EED746002B7D02 /* ImageMockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21115A22EED746002B7D02 /* ImageMockRepository.swift */; };
+		2B21115E22EEDC4A002B7D02 /* DetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21115D22EEDC4A002B7D02 /* DetailViewModelTests.swift */; };
+		2B21116022EEDD41002B7D02 /* PhotoMockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21115F22EEDD41002B7D02 /* PhotoMockRepository.swift */; };
 		2B35BDDC22E9540B008A70BC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B35BDDB22E9540B008A70BC /* DetailViewController.swift */; };
 		2B35BDDF22E95529008A70BC /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B35BDDE22E95529008A70BC /* DetailViewModel.swift */; };
 		2B35BDE222E95791008A70BC /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B35BDE122E95791008A70BC /* PhotoCell.swift */; };
@@ -68,9 +80,21 @@
 		2B6B6F0322E8060F0077D747 /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B6F0222E8060F0077D747 /* ImageRepository.swift */; };
 		2B6B6F0522E806370077D747 /* ImageRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B6F0422E806370077D747 /* ImageRemoteRepository.swift */; };
 		60B504AE45B4D7181784764E /* Pods_CarRepair.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78FFF6F497F784A25DB08BB /* Pods_CarRepair.framework */; };
+		FD2487C9FF9185A86B91290D /* Pods_CarRepairTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2286F37D763366677A426DC1 /* Pods_CarRepairTests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2B21113B22EEBF11002B7D02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B35C7F222E69340002D1CED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B35C7F922E69340002D1CED;
+			remoteInfo = CarRepair;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2286F37D763366677A426DC1 /* Pods_CarRepairTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarRepairTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A0D2D92B81418861264ECB /* Pods-CarRepair.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarRepair.debug.xcconfig"; path = "Target Support Files/Pods-CarRepair/Pods-CarRepair.debug.xcconfig"; sourceTree = "<group>"; };
 		24DEF1AE586094B4A000BAB7 /* Pods-CarRepair.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarRepair.release.xcconfig"; path = "Target Support Files/Pods-CarRepair/Pods-CarRepair.release.xcconfig"; sourceTree = "<group>"; };
 		2B21110022ED2474002B7D02 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
@@ -90,6 +114,20 @@
 		2B21112C22EEA93E002B7D02 /* ReviewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCellViewModel.swift; sourceTree = "<group>"; };
 		2B21112E22EEB7E3002B7D02 /* CarRepairError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRepairError.swift; sourceTree = "<group>"; };
 		2B21113022EEBCB1002B7D02 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		2B21113622EEBF11002B7D02 /* CarRepairTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarRepairTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B21113A22EEBF11002B7D02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B21114122EEBF87002B7D02 /* ListMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ListMock.json; sourceTree = "<group>"; };
+		2B21114322EEBFA5002B7D02 /* DetailsMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DetailsMock.json; sourceTree = "<group>"; };
+		2B21114522EEBFBB002B7D02 /* ListNextPageMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ListNextPageMock.json; sourceTree = "<group>"; };
+		2B21114922EEC1FA002B7D02 /* CarRepairServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRepairServiceTests.swift; sourceTree = "<group>"; };
+		2B21114B22EECACF002B7D02 /* PhotoServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoServiceTests.swift; sourceTree = "<group>"; };
+		2B21114D22EECC95002B7D02 /* ImageServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceTests.swift; sourceTree = "<group>"; };
+		2B21114F22EECE0E002B7D02 /* RequestFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactoryTests.swift; sourceTree = "<group>"; };
+		2B21115422EED599002B7D02 /* CarRepairMockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRepairMockRepository.swift; sourceTree = "<group>"; };
+		2B21115822EED70F002B7D02 /* ListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelTests.swift; sourceTree = "<group>"; };
+		2B21115A22EED746002B7D02 /* ImageMockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMockRepository.swift; sourceTree = "<group>"; };
+		2B21115D22EEDC4A002B7D02 /* DetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTests.swift; sourceTree = "<group>"; };
+		2B21115F22EEDD41002B7D02 /* PhotoMockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMockRepository.swift; sourceTree = "<group>"; };
 		2B35BDDB22E9540B008A70BC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2B35BDDE22E95529008A70BC /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		2B35BDE122E95791008A70BC /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
@@ -135,10 +173,20 @@
 		2B6B6F0022E804E90077D747 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		2B6B6F0222E8060F0077D747 /* ImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
 		2B6B6F0422E806370077D747 /* ImageRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRemoteRepository.swift; sourceTree = "<group>"; };
+		A771FA78CE9390197C221260 /* Pods-CarRepairTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarRepairTests.debug.xcconfig"; path = "Target Support Files/Pods-CarRepairTests/Pods-CarRepairTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCF4B8F931CE073E425F7370 /* Pods-CarRepairTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarRepairTests.release.xcconfig"; path = "Target Support Files/Pods-CarRepairTests/Pods-CarRepairTests.release.xcconfig"; sourceTree = "<group>"; };
 		F78FFF6F497F784A25DB08BB /* Pods_CarRepair.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarRepair.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2B21113322EEBF11002B7D02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD2487C9FF9185A86B91290D /* Pods_CarRepairTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2B35C7F722E69340002D1CED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -157,6 +205,82 @@
 				2B21113022EEBCB1002B7D02 /* UIViewController+Alert.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2B21113722EEBF11002B7D02 /* CarRepairTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B21115622EED6FA002B7D02 /* Modules */,
+				2B21114722EEC1AF002B7D02 /* Shared */,
+				2B21114022EEBF6F002B7D02 /* Mock */,
+				2B21113A22EEBF11002B7D02 /* Info.plist */,
+			);
+			path = CarRepairTests;
+			sourceTree = "<group>";
+		};
+		2B21114022EEBF6F002B7D02 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				2B21114122EEBF87002B7D02 /* ListMock.json */,
+				2B21114522EEBFBB002B7D02 /* ListNextPageMock.json */,
+				2B21114322EEBFA5002B7D02 /* DetailsMock.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		2B21114722EEC1AF002B7D02 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2B21115122EED487002B7D02 /* Repositories */,
+				2B21114822EEC1BA002B7D02 /* Services */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2B21114822EEC1BA002B7D02 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2B21114F22EECE0E002B7D02 /* RequestFactoryTests.swift */,
+				2B21114922EEC1FA002B7D02 /* CarRepairServiceTests.swift */,
+				2B21114B22EECACF002B7D02 /* PhotoServiceTests.swift */,
+				2B21114D22EECC95002B7D02 /* ImageServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2B21115122EED487002B7D02 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				2B21115422EED599002B7D02 /* CarRepairMockRepository.swift */,
+				2B21115F22EEDD41002B7D02 /* PhotoMockRepository.swift */,
+				2B21115A22EED746002B7D02 /* ImageMockRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		2B21115622EED6FA002B7D02 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2B21115C22EEDC31002B7D02 /* Detail */,
+				2B21115722EED702002B7D02 /* List */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		2B21115722EED702002B7D02 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				2B21115822EED70F002B7D02 /* ListViewModelTests.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		2B21115C22EEDC31002B7D02 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2B21115D22EEDC4A002B7D02 /* DetailViewModelTests.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		2B35BDD922E953FB008A70BC /* Detail */ = {
@@ -208,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				2B35C7FC22E69340002D1CED /* CarRepair */,
+				2B21113722EEBF11002B7D02 /* CarRepairTests */,
 				2B35C7FB22E69340002D1CED /* Products */,
 				3933B62CB54C5C7A78D982D9 /* Pods */,
 				86DF9F879FD1BDCD5F849D83 /* Frameworks */,
@@ -218,6 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				2B35C7FA22E69340002D1CED /* CarRepair.app */,
+				2B21113622EEBF11002B7D02 /* CarRepairTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -425,6 +551,8 @@
 			children = (
 				23A0D2D92B81418861264ECB /* Pods-CarRepair.debug.xcconfig */,
 				24DEF1AE586094B4A000BAB7 /* Pods-CarRepair.release.xcconfig */,
+				A771FA78CE9390197C221260 /* Pods-CarRepairTests.debug.xcconfig */,
+				BCF4B8F931CE073E425F7370 /* Pods-CarRepairTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -433,6 +561,7 @@
 			isa = PBXGroup;
 			children = (
 				F78FFF6F497F784A25DB08BB /* Pods_CarRepair.framework */,
+				2286F37D763366677A426DC1 /* Pods_CarRepairTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -440,6 +569,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2B21113522EEBF11002B7D02 /* CarRepairTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B21113D22EEBF11002B7D02 /* Build configuration list for PBXNativeTarget "CarRepairTests" */;
+			buildPhases = (
+				E908C963B5FE37847BA3782D /* [CP] Check Pods Manifest.lock */,
+				2B21113222EEBF11002B7D02 /* Sources */,
+				2B21113322EEBF11002B7D02 /* Frameworks */,
+				2B21113422EEBF11002B7D02 /* Resources */,
+				D61C8D96498325DD2748F840 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B21113C22EEBF11002B7D02 /* PBXTargetDependency */,
+			);
+			name = CarRepairTests;
+			productName = CarRepairTests;
+			productReference = 2B21113622EEBF11002B7D02 /* CarRepairTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		2B35C7F922E69340002D1CED /* CarRepair */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B35C80C22E69342002D1CED /* Build configuration list for PBXNativeTarget "CarRepair" */;
@@ -469,6 +618,11 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Gilson Gil";
 				TargetAttributes = {
+					2B21113522EEBF11002B7D02 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = 2B35C7F922E69340002D1CED;
+					};
 					2B35C7F922E69340002D1CED = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
@@ -488,11 +642,22 @@
 			projectRoot = "";
 			targets = (
 				2B35C7F922E69340002D1CED /* CarRepair */,
+				2B21113522EEBF11002B7D02 /* CarRepairTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2B21113422EEBF11002B7D02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B21114422EEBFA5002B7D02 /* DetailsMock.json in Resources */,
+				2B21114622EEBFBB002B7D02 /* ListNextPageMock.json in Resources */,
+				2B21114222EEBF87002B7D02 /* ListMock.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2B35C7F822E69340002D1CED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -551,9 +716,71 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D61C8D96498325DD2748F840 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarRepairTests/Pods-CarRepairTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CarRepairTests/Pods-CarRepairTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E908C963B5FE37847BA3782D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarRepairTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2B21113222EEBF11002B7D02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B21115022EECE0E002B7D02 /* RequestFactoryTests.swift in Sources */,
+				2B21115B22EED746002B7D02 /* ImageMockRepository.swift in Sources */,
+				2B21114C22EECACF002B7D02 /* PhotoServiceTests.swift in Sources */,
+				2B21115E22EEDC4A002B7D02 /* DetailViewModelTests.swift in Sources */,
+				2B21115922EED70F002B7D02 /* ListViewModelTests.swift in Sources */,
+				2B21115522EED599002B7D02 /* CarRepairMockRepository.swift in Sources */,
+				2B21114A22EEC1FA002B7D02 /* CarRepairServiceTests.swift in Sources */,
+				2B21114E22EECC95002B7D02 /* ImageServiceTests.swift in Sources */,
+				2B21116022EEDD41002B7D02 /* PhotoMockRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2B35C7F622E69340002D1CED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -615,6 +842,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2B21113C22EEBF11002B7D02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B35C7F922E69340002D1CED /* CarRepair */;
+			targetProxy = 2B21113B22EEBF11002B7D02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		2B35C80122E69340002D1CED /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -635,6 +870,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2B21113E22EEBF11002B7D02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A771FA78CE9390197C221260 /* Pods-CarRepairTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6WSB9NHED;
+				INFOPLIST_FILE = CarRepairTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gilsongil.CarRepairTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarRepair.app/CarRepair";
+			};
+			name = Debug;
+		};
+		2B21113F22EEBF11002B7D02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCF4B8F931CE073E425F7370 /* Pods-CarRepairTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6WSB9NHED;
+				INFOPLIST_FILE = CarRepairTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gilsongil.CarRepairTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarRepair.app/CarRepair";
+			};
+			name = Release;
+		};
 		2B35C80A22E69342002D1CED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -792,6 +1072,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2B21113D22EEBF11002B7D02 /* Build configuration list for PBXNativeTarget "CarRepairTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B21113E22EEBF11002B7D02 /* Debug */,
+				2B21113F22EEBF11002B7D02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2B35C7F522E69340002D1CED /* Build configuration list for PBXProject "CarRepair" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

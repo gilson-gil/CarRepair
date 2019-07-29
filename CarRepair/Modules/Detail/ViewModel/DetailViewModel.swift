@@ -92,7 +92,7 @@ final class DetailViewModel {
             ],
             place.reviews?.map {
                 CellConfigurator<ReviewCell>(viewModel: .init(review: $0, imageRepository: imageRepository))
-                } ?? []
+            } ?? []
         ]
         if !place.photos.isEmpty {
             configurators.insert([

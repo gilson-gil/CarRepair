@@ -1,0 +1,874 @@
+{
+    "html_attributions": [],
+    "next_page_token": "CtQDwwEAAAsCyfHMoDDMXy428DANn2qQ_710RYxc5w8Zj1aOPDAwX6NZoIrsYquWtcRv17uRYa6C2BAeaUXGHRvDVE7JYYwxgwod9Dp-2lAYgx06iF95sMs2KRD9TKyTS1KuMZseXwwsUTKWklaq-7HSjIAlQXcqLayyrluVP8xNN_qx_JSVDDBXT0bskb277gFXZywW1rSPf02IuGABN_XeYdUj5rXD-InCHUzE9P7Jw48kkqDpJcx7cY4iwx69HZMEbiSzYldzL_gGVdUQ517Fn-39YpsjJ2CiFl0VdD6wine_6illQdQKL0yx1X6cjk77fM3YDdFuSvrmqS0SNgGmmfYzOCh64-zvRjzylxuiEW4CqfYvCwpwRdZ0Q3b7mstB0UhBVJpPHnidms7FoZcKTuzHIpnhuXBiqT0wnqLuB2riwn5tocn6QurzBwwBwhcqxyNo0y8pucsfDvvXlCk-mHa-vcWj-u5oc6Rf32vaKU5ik_He0XeObdbMW1lQP22QLnbL_Dz0mcwxSj7iegxefXb1U1fnyzx2judhyFZ2tQ0Ag_JNrSAq5LnrJXxQyQdkUoX-DdlyyS8tHzf0voBd3UECBPCuv_i1mgI3-hStkiStVylhEhAws9QFfPw3MWuFH3Zw39QMGhROjgDPwbRKQPgBUlUTI4HBoYxAOw",
+    "results": [
+        {
+            "geometry": {
+                "location": {
+                    "lat": -22.903355,
+                    "lng": -43.215628
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -22.90199236970849,
+                        "lng": -43.2142550697085
+                    },
+                    "southwest": {
+                        "lat": -22.9046903302915,
+                        "lng": -43.2169530302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "bd85e54bb2bde6bf30ec8bbefa3180f60b832344",
+            "name": "Multiusos",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 4320,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/105125982921566169890/photos\">Multiusos</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAbSsjetPWZW1uhlYXZ-sPj-y2pmympZP3iu40pdOCb7QHfdRmbzeEDFCBvLrTTjGttIecLxYcY9uUMmRIs02t03K0shyrwsvPxpb2HwWcQN-DNpWlqqKXZI_fkrs658XXEhBm7TI89LzzVoUIT07lWwULGhTHQGhunpgIB0laTUNPT-QV_Nd00A",
+                    "width": 2432
+                }
+            ],
+            "place_id": "ChIJJ-Y9fv1-mQAR0nuBwpHSMtk",
+            "plus_code": {
+                "compound_code": "3QWM+MP São Cristóvão, Rio de Janeiro - State of Rio de Janeiro, Brazil",
+                "global_code": "589R3QWM+MP"
+            },
+            "reference": "ChIJJ-Y9fv1-mQAR0nuBwpHSMtk",
+            "scope": "GOOGLE",
+            "types": [
+                "hardware_store",
+                "car_repair",
+                "store",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Rua Figueira de Melo, 265 - São Cristóvão, Rio de Janeiro"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": -22.9004941,
+                    "lng": -43.2044661
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -22.8990915197085,
+                        "lng": -43.2031096697085
+                    },
+                    "southwest": {
+                        "lat": -22.9017894802915,
+                        "lng": -43.2058076302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "b4f5ddd1cec1ea7956bac89edc8d40f64fb68d97",
+            "name": "Auto Peças Serviços",
+            "place_id": "ChIJMU7pxBl_mQARE95wKJsK77k",
+            "plus_code": {
+                "compound_code": "3QXW+R6 Rio de Janeiro, State of Rio de Janeiro, Brazil",
+                "global_code": "589R3QXW+R6"
+            },
+            "reference": "ChIJMU7pxBl_mQARE95wKJsK77k",
+            "scope": "GOOGLE",
+            "types": [
+                "car_repair",
+                "store",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Rua Santo Cristo, 299 - Santo Cristo, Rio de Janeiro"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": -22.8983742,
+                    "lng": -43.20717700000001
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -22.8969823197085,
+                        "lng": -43.20586691970851
+                    },
+                    "southwest": {
+                        "lat": -22.8996802802915,
+                        "lng": -43.2085648802915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "8398d6d983e022ab702a24668211951db38b20de",
+            "name": "Mega Auto Center",
+            "place_id": "ChIJN2bt5hh_mQARuTRcH0Z-Bkw",
+            "plus_code": {
+                "compound_code": "4Q2V+M4 Rio de Janeiro, State of Rio de Janeiro, Brazil",
+                "global_code": "589R4Q2V+M4"
+            },
+            "rating": 5,
+            "reference": "ChIJN2bt5hh_mQARuTRcH0Z-Bkw",
+            "scope": "GOOGLE",
+            "types": [
+                "car_repair",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1,
+            "vicinity": "Via Binário do Porto - Santo Cristo, Rio de Janeiro"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": -22.9067839,
+                    "lng": -43.214606
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -22.9055029697085,
+                        "lng": -43.21325081970851
+                    },
+                    "southwest": {
+                        "lat": -22.9082009302915,
+                        "lng": -43.21594878029151
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "050935ffc42efd25280eb87e93fae0fa1382deb1",
+            "name": "Injtec Injeção Diesel Serv Navais",
+            "place_id": "ChIJN0u-iTV_mQARPWth5hFs8GU",
+            "plus_code": {
+                "compound_code": "3QVP+75 São Cristóvão, Rio de Janeiro - State of Rio de Janeiro, Brazil",
+                "global_code": "589R3QVP+75"
+            },
+            "reference": "ChIJN0u-iTV_mQARPWth5hFs8GU",
+            "scope": "GOOGLE",
+            "types": [
+                "car_repair",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Rua Francisco Eugênio, 166 - São Cristóvão, Rio de Janeiro"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": -22.9067247,
+                    "lng": -43.2146594
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -22.9054752197085,
+                        "lng": -43.2133013197085
+                    },
+                    "southwest": {
+                        "lat": -22.9081731802915,
+                        "lng": -43.2159992802915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "e0bc78e90505c84784ae90e6e52378df3b0dd0a2",
+            "name": "Speed Werke",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 3984,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/113176833925661653599/photos\">Paulo Alberto</a>"
+                    ],
+                    "photo_reference": "CmRaAAAACCq-UbLyrFhdNYp0JGSqtMMylts1pvfxo1j_7hOKXXg_tR8RaFG7sEaiAkZE5f48Nf8ThbovOFirFo0WDXoRGX2NDRlaDNSErqk9Xbo6_MXTed4MRZK96T3DSIPj1fbWEhCknbSD3sd9wLzDuoODpBfSGhQD3Z_YPU41pTWPUHS0JrogUxpMTQ",
+                    "width": 2988
+                }
+            ],
+            "place_id": "ChIJ3YSKlf1-mQARb1jWVQ1cTV0",
+            "plus_code": {
+                "compound_code": "3QVP+84 Rio de Janeiro, State of Rio de Janeiro, Brazil",
+                "global_code": "589R3QVP+84"
+            },
+            "rating": 4.6,
+            "reference": "ChIJ3YSKlf1-mQARb1jWVQ1cTV0",
+            "scope": "GOOGLE",
+            "types": [
+                "car_repair",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 10,
+            "vicinity": "Rua Francisco Eugênio, 164 - São Cristóvão, Rio de Janeiro"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": -22.9004406,
+                    "lng": -43.2043312
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -22.8990839697085,
+                        "lng": -43.2029811697085
+                    },
+                    "southwest": {
+                        "lat": -22.9017819302915,
+                        "lng": -43.20567913029149
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "32a55904a656429302e5165bea1082f3b7832601",
+            "name": "CENTRO AUTOMOTIVO BANDEIRA 2",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 768,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/116462796217013387417/photos\">CENTRO AUTOMOTIVO BANDEIRA 2</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAz-ijUltCSO686uK-fms0QQ2xDiW3XREveWW-DYWH5v8_iBx8yBrzzEvTTrAEibEwyttw_u3x5rGtoC3bf8ejryhhrG2AC0YK7GD7rN-pASfxJXbS_K3Qu_2GuS1LOmSzEhCmudv_NEV6eWg8E4PmbXSsGhSvFEQ12IiBEunwOVJM9rB9UUJkDg",
+                    "width": 1024
+                }
+            ],
+            "place_id": "ChIJ95642hl_mQARhCCQmeExmIM",
+            "plus_code": {
+                "compound_code": "3QXW+R7 Santo Cristo - Rio de Janeiro, State of Rio de Janeiro, Brazil",
+                "global_code": "589R3QXW+R7"
+            },
+            "rating": 4.9,
+            "reference": "ChIJ95642hl_mQARhCCQmeExmIM",
+            "scope": "GOOGLE",
+            "types": [
+                "car_repair",
+                "store",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 25,
+            "vicinity": "Rua Santo Cristo, 295/297 - Santo Cristo, Rio de Janeiro"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": -22.90682799999999,
+                    "lng": -43.21476149999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -22.9055311697085,
+                        "lng": -43.2134077697085
+                    },
+                    "southwest": {
+                        "lat": -22.9082291302915,
+                        "lng": -43.2161057302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "30c82f4a673f06a7703576734d94cd7b7bf16eba",
+            "name": "Robox Geradores Ltda",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 480,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/117507320279523959154/photos\">Robox Geradores Ltda</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAUe-e9ZkxIsawt9J8qsscOTxv7RyrKIuglrBrDCEA9zCpxP0ixAu0KP1u8wMbVnHSczv56NDGQ_-XO2NE_wbQqmxESSGwUrjuj9ar9siw4rrqYjABSpLAUQqA4mzvBr6SEhAAEWGEuzYyLTbkVAyZylEpGhSjO-AkgQIHnAXHH-Epv_KkhCcntw",
+                    "width": 819
+                }
+            ],
+            "place_id": "ChIJ78LBkf1-mQAR6ru9LQ7D1MI",
+            "plus_code": {
+                "compound_code": "3QVP+73 São Cristóvão, Rio de Janeiro - State of Rio de Janeiro, Brazil",
+                "global_code": "589R3QVP+73"
+            },
+            "rating": 1,
+            "reference": "ChIJ78LBkf1-mQAR6ru9LQ7D1MI",
+            "scope": "GOOGLE",
+            "types": [
+                "car_repair",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1,
+            "vicinity": "Rua Francisco Eugênio, 168 - São Cristóvão, Rio de Janeiro"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": -22.9040123,
+                    "lng": -43.2159275
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -22.9026222197085,
+                        "lng": -43.2145973197085
+                    },
+                    "southwest": {
+                        "lat": -22.9053201802915,
+                        "lng": -43.21729528029149
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "8bdeaaec5797ad1c371f96df3b4efe62a156ff68",
+            "name": "MULTIUSOS",
+            "opening_hours": {
+                "open_now": false
+            },
+            "place_id": "ChIJcRji3vx-mQARc2r9hzbY2k4",
+            "plus_code": {
+                "compound_code": "3QWM+9J Rio de Janeiro, State of Rio de Janeiro, Brazil",
+                "global_code": "589R3QWM+9J"
+            },
+            "reference": "ChIJcRji3vx-mQARc2r9hzbY2k4",
+            "scope": "GOOGLE",
+            "types": [
+                "car_repair",
+                "store",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Avenida Pedro II, 233 - São Cristóvão, Rio de Janeiro"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": -22.90656199999999,
+                    "lng": -43.215094
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -22.9054074197085,
+                        "lng": -43.2137250197085
+                    },
+                    "southwest": {
+                        "lat": -22.9081053802915,
+                        "lng": -43.2164229802915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "a609cb022984d410cb6afceb7428aae94495a993",
+            "name": "Auto Mecânica TopGan",
+            "opening_hours": {
+                "open_now": false
+            },
+            "place_id": "ChIJw3Z-uf1-mQAR5pwuPAei15U",
+            "plus_code": {
+                "compound_code": "3QVM+9X São Cristóvão, Rio de Janeiro - State of Rio de Janeiro, Brazil",
+                "global_code": "589R3QVM+9X"
+            },
+            "reference": "ChIJw3Z-uf1-mQAR5pwuPAei15U",
+            "scope": "GOOGLE",
+            "types": [
+                "car_repair",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Rua Francisco Eugênio, 120 - São Cristóvão, Rio de Janeiro"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": -22.9041008,
+                    "lng": -43.2160804
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -22.9026983197085,
+                        "lng": -43.2147558697085
+                    },
+                    "southwest": {
+                        "lat": -22.9053962802915,
+                        "lng": -43.2174538302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "401e13a142f72ff43009f411b0836060d35bf9f5",
+            "name": "Oficina Mecânica gasolina azul",
+            "opening_hours": {
+                "open_now": false
+            },
+            "place_id": "ChIJ_9jw3vx-mQARJrlItsQLyRg",
+            "plus_code": {
+                "compound_code": "3QWM+9H Rio de Janeiro, State of Rio de Janeiro, Brazil",
+                "global_code": "589R3QWM+9H"
+            },
+            "rating": 4,
+            "reference": "ChIJ_9jw3vx-mQARJrlItsQLyRg",
+            "scope": "GOOGLE",
+            "types": [
+                "car_repair",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1,
+            "vicinity": "Avenida Pedro II, 235 - São Cristóvão, Rio de Janeiro"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": -22.902256,
+                    "lng": -43.216146
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -22.9009373197085,
+                        "lng": -43.21485216970851
+                    },
+                    "southwest": {
+                        "lat": -22.9036352802915,
+                        "lng": -43.2175501302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "6f81811dc9274561d587175f18bd7f2b4d110ce8",
+            "name": "Condor de São Cristóvão",
+            "place_id": "ChIJMZF4JuN-mQARqw0qXzKT_xA",
+            "plus_code": {
+                "compound_code": "3QXM+3G São Cristóvão, Rio de Janeiro - State of Rio de Janeiro, Brazil",
+                "global_code": "589R3QXM+3G"
+            },
+            "reference": "ChIJMZF4JuN-mQARqw0qXzKT_xA",
+            "scope": "GOOGLE",
+            "types": [
+                "car_repair",
+                "store",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Rua Figueira de Melo, 320 - São Cristóvão, Rio de Janeiro"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": -22.900502,
+                    "lng": -43.20370800000001
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -22.8991311197085,
+                        "lng": -43.2023590697085
+                    },
+                    "southwest": {
+                        "lat": -22.9018290802915,
+                        "lng": -43.2050570302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "e7e89d52d53c4b81810429bfa7ae86db46101ee2",
+            "name": "M Ferreira Comércio de Peças",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 1536,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/111065061510512848294/photos\">M Ferreira Comércio de Peças</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAPBBs28RleXUge5EDnsYYcGE26uir-51pggJCKhwiWpdocxQ4KGbBjf7ZeQ-PFcUwM3mrCIEX4ARQtv5LKddxZO2e9ezSVubVjp2e8Uyg9DMF6bQaYnhIzGdJYfngf5nqEhD2BX51jDPMJ1EJuI-NS8waGhTfOKqZFUde3WkeO9DLeIwc1wa27A",
+                    "width": 1534
+                }
+            ],
+            "place_id": "ChIJT5ADfRd_mQARJNDvcKh9rAw",
+            "plus_code": {
+                "compound_code": "3QXW+QG Santo Cristo - Rio de Janeiro, State of Rio de Janeiro, Brazil",
+                "global_code": "589R3QXW+QG"
+            },
+            "rating": 1,
+            "reference": "ChIJT5ADfRd_mQARJNDvcKh9rAw",
+            "scope": "GOOGLE",
+            "types": [
+                "car_repair",
+                "store",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1,
+            "vicinity": "Rua Santo Cristo, 279 - Santo Cristo, Rio de Janeiro"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": -22.9067838,
+                    "lng": -43.2153577
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -22.9055307197085,
+                        "lng": -43.2139988697085
+                    },
+                    "southwest": {
+                        "lat": -22.9082286802915,
+                        "lng": -43.2166968302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "e825a65802a2989a5b42118e46d36e16377e9b6a",
+            "name": "Oficina REVISACAR",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 1152,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/101826709928165736093/photos\">Oficina REVISACAR</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAjqpn5UDQ5IZ_JfFUSHaeOR9X047fDrQfmLWOCmQnDO6BrvK-feLNVdizMI0zr40iR6X7N_gq57JR6yoDQsyIXFoBihNS8yw3DrQyOcovyiPi0dQXLSBlhSQoDSTyCR-nEhB7vH6NPdJ6F4XeoBkKve8-GhREblMoZsSwsQIuZUYJHmEwVYoDWQ",
+                    "width": 2048
+                }
+            ],
+            "place_id": "ChIJVVUhyP1-mQAR4IMfHxQJDck",
+            "plus_code": {
+                "compound_code": "3QVM+7V São Cristóvão, Rio de Janeiro - State of Rio de Janeiro, Brazil",
+                "global_code": "589R3QVM+7V"
+            },
+            "rating": 4.6,
+            "reference": "ChIJVVUhyP1-mQAR4IMfHxQJDck",
+            "scope": "GOOGLE",
+            "types": [
+                "car_repair",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 54,
+            "vicinity": "Rua Francisco Eugênio, 184 - LOJA A - São Cristóvão, Rio de Janeiro"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": -22.9016871,
+                    "lng": -43.2164275
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -22.90038741970849,
+                        "lng": -43.2151675197085
+                    },
+                    "southwest": {
+                        "lat": -22.9030853802915,
+                        "lng": -43.2178654802915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "d8f262ef395698cf1a76ebe9e8174e8bf1eb5695",
+            "name": "Arauto Peças",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 3264,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/106507430016829321477/photos\">Judson Romello</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAaaPTpwEnbE-ieJKGOBPya23Z1m0JBX_jlSUVg3GgSiqyBKdr_fFY6kR8db2jOVy8dz3HvbO0KcNuXFgx5IPWs-Fneh42PmzAqR3V1XRjC9RyXiYZea9ntHv8kDL_fmtWEhBZSle9NAQgjblaumb-Snk_GhSAPPMJFjbCvkMo3NCcr3m8VKe15A",
+                    "width": 1836
+                }
+            ],
+            "place_id": "ChIJEffNF-N-mQARkpyZtHxgaAI",
+            "plus_code": {
+                "compound_code": "3QXM+8C São Cristóvão, Rio de Janeiro - State of Rio de Janeiro, Brazil",
+                "global_code": "589R3QXM+8C"
+            },
+            "rating": 4.5,
+            "reference": "ChIJEffNF-N-mQARkpyZtHxgaAI",
+            "scope": "GOOGLE",
+            "types": [
+                "car_repair",
+                "store",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 30,
+            "vicinity": "Rua Figueira de Melo, 348 - São Cristóvão, Rio de Janeiro"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": -22.9101644,
+                    "lng": -43.21071010000001
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -22.9088078697085,
+                        "lng": -43.2093637197085
+                    },
+                    "southwest": {
+                        "lat": -22.9115058302915,
+                        "lng": -43.2120616802915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/gas_station-71.png",
+            "id": "30b7c7332165d0ab7c755ef87c450c6382e04e53",
+            "name": "SACOLA TÉRMICA BAGCOOL - P.DE GASOLINA BRACARENSE LTDA",
+            "opening_hours": {
+                "open_now": true
+            },
+            "place_id": "ChIJYTqycAF_mQARsbiIp_Z9L94",
+            "plus_code": {
+                "compound_code": "3QQQ+WP Praça da Bandeira - Rio de Janeiro, State of Rio de Janeiro, Brazil",
+                "global_code": "589R3QQQ+WP"
+            },
+            "rating": 1,
+            "reference": "ChIJYTqycAF_mQARsbiIp_Z9L94",
+            "scope": "GOOGLE",
+            "types": [
+                "gas_station",
+                "convenience_store",
+                "liquor_store",
+                "car_repair",
+                "store",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1,
+            "vicinity": "Avenida Osvaldo Aranha, 11 - Praca da Bandeira, Rio de Janeiro"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": -22.901736,
+                    "lng": -43.216726
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -22.9003691197085,
+                        "lng": -43.21534466970851
+                    },
+                    "southwest": {
+                        "lat": -22.9030670802915,
+                        "lng": -43.2180426302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "9d34051b296e6aec0f3ef8887ee36153c714a67a",
+            "name": "Rei dos Vidros",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 3264,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/104561768956999497088/photos\">yagooe1</a>"
+                    ],
+                    "photo_reference": "CmRZAAAAkOJFcVMDIR-YIkVcRPbWtU2inAwGC4b5ATlAhu4EoSg_yx13gCMWCFpZZOZrG3lfrXzkm7Y7tYNXMiczgKFYohoeJBzlHqO4Q9LAXOKr9bv2xdGn0cDwD4SQv1evVqgQEhAgn4iT-LDT_roEyBN7Ol3FGhTpv_GwK5W5UuEFovMM-9RgikHe7Q",
+                    "width": 2448
+                }
+            ],
+            "place_id": "ChIJYVU-FuN-mQARrs5iqVmAgLo",
+            "plus_code": {
+                "compound_code": "3QXM+88 São Cristóvão, Rio de Janeiro - State of Rio de Janeiro, Brazil",
+                "global_code": "589R3QXM+88"
+            },
+            "rating": 4.5,
+            "reference": "ChIJYVU-FuN-mQARrs5iqVmAgLo",
+            "scope": "GOOGLE",
+            "types": [
+                "car_repair",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 57,
+            "vicinity": "Rua Figueira de Melo, 331 - São Cristóvão, Rio de Janeiro"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": -22.9010097,
+                    "lng": -43.21651170000001
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -22.89962346970849,
+                        "lng": -43.2152126197085
+                    },
+                    "southwest": {
+                        "lat": -22.9023214302915,
+                        "lng": -43.2179105802915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "3ddfbf9bac0d5c9c113d442392a5f2100baaaf89",
+            "name": "BARILOCHE ACESSORIOS",
+            "place_id": "ChIJd2byHTF_mQARhp3iMas5IwY",
+            "plus_code": {
+                "compound_code": "3QXM+H9 São Cristóvão, Rio de Janeiro - State of Rio de Janeiro, Brazil",
+                "global_code": "589R3QXM+H9"
+            },
+            "reference": "ChIJd2byHTF_mQARhp3iMas5IwY",
+            "scope": "GOOGLE",
+            "types": [
+                "car_repair",
+                "store",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Rua São Cristóvão, 776 - São Cristóvão, Rio de Janeiro"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": -22.9003774,
+                    "lng": -43.2162082
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -22.8990215197085,
+                        "lng": -43.2148685697085
+                    },
+                    "southwest": {
+                        "lat": -22.9017194802915,
+                        "lng": -43.2175665302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "5500b8aa8f4d466fdda2cc390ca5345016bb56ad",
+            "name": "Lemint Accessories and Automotive Parts",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 1536,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/103760957545050391846/photos\">Lemint Acessórios e Peças Automotivas</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAjuVTtJ0k-lJxFfPYJfBwQWyHAWsC7UoKvQjP9PAtrq00KMSr85njMcqtX7J1V-oRQoAKaqrdTYb_9hM9XuNCJ9oUsCABHadAIDAFaHXkMn8vB6ppyywteeIXOQOTNeYiEhAzhL7hAK9p_iAyF4JV5U2VGhT95_wKPblQuzTmCMHQ6byNS3tyvA",
+                    "width": 1532
+                }
+            ],
+            "place_id": "ChIJnSLtqON-mQARYtMmo-ypHkc",
+            "plus_code": {
+                "compound_code": "3QXM+RG São Cristóvão, Rio de Janeiro - State of Rio de Janeiro, Brazil",
+                "global_code": "589R3QXM+RG"
+            },
+            "rating": 3.9,
+            "reference": "ChIJnSLtqON-mQARYtMmo-ypHkc",
+            "scope": "GOOGLE",
+            "types": [
+                "car_repair",
+                "store",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 15,
+            "vicinity": "Rua São Cristóvão, 845 - São Cristóvão, Rio de Janeiro"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": -22.9010723,
+                    "lng": -43.2165754
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -22.8996880197085,
+                        "lng": -43.21527371970851
+                    },
+                    "southwest": {
+                        "lat": -22.9023859802915,
+                        "lng": -43.2179716802915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "eff2edfabd3fc397d7bed8dfc4cc542b2d6a2e2c",
+            "name": "bariloche som ar acessorios",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 2448,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/117047580747816410605/photos\">Anderson Santos</a>"
+                    ],
+                    "photo_reference": "CmRaAAAAeQvTPee4n4M0MvYXMiMOHYDl0ZRpIwOTG1Z3H0I0tTc7i6rB6fASWwFERQjeorBBnYlTdX4znJg3H3s7mN5BxwehPIABxlILVXKCggBChifXxs_IXlB1h1r-SIrPZgmrEhC20KE6wwNvo7GxfjRYXXF9GhSAAontQPPEqdkYeT1MPnvxkH0iBA",
+                    "width": 3264
+                }
+            ],
+            "place_id": "ChIJe5_N4xJ_mQAR-1BQaQ0I7V4",
+            "plus_code": {
+                "compound_code": "3QXM+H9 Rio de Janeiro, State of Rio de Janeiro, Brazil",
+                "global_code": "589R3QXM+H9"
+            },
+            "rating": 4,
+            "reference": "ChIJe5_N4xJ_mQAR-1BQaQ0I7V4",
+            "scope": "GOOGLE",
+            "types": [
+                "electronics_store",
+                "car_repair",
+                "store",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 4,
+            "vicinity": "Rua São Cristóvão, 764 - São Cristóvão, Rio de Janeiro"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": -22.900051,
+                    "lng": -43.216213
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -22.8986921197085,
+                        "lng": -43.2148466697085
+                    },
+                    "southwest": {
+                        "lat": -22.9013900802915,
+                        "lng": -43.2175446302915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "4e35d5391c4aeeceb844bfd4c32ed0abf6ddfaf1",
+            "name": "São Cris",
+            "opening_hours": {
+                "open_now": false
+            },
+            "place_id": "ChIJV27vruN-mQARKL2tSuQJqtM",
+            "plus_code": {
+                "compound_code": "3QXM+XG São Cristóvão, Rio de Janeiro - State of Rio de Janeiro, Brazil",
+                "global_code": "589R3QXM+XG"
+            },
+            "reference": "ChIJV27vruN-mQARKL2tSuQJqtM",
+            "scope": "GOOGLE",
+            "types": [
+                "car_repair",
+                "store",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Rua Escobar, 5 - São Cristóvão, Rio de Janeiro"
+        }
+    ],
+    "status": "OK"
+}

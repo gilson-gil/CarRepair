@@ -1,0 +1,263 @@
+{
+    "html_attributions": [],
+    "result": {
+        "address_components": [
+            {
+                "long_name": "Brasil",
+                "short_name": "Brasil",
+                "types": [
+                    "route"
+                ]
+            },
+            {
+                "long_name": "São Cristóvão",
+                "short_name": "São Cristóvão",
+                "types": [
+                    "sublocality_level_1",
+                    "sublocality",
+                    "political"
+                ]
+            },
+            {
+                "long_name": "Rio de Janeiro",
+                "short_name": "Rio de Janeiro",
+                "types": [
+                    "administrative_area_level_2",
+                    "political"
+                ]
+            },
+            {
+                "long_name": "Rio de Janeiro",
+                "short_name": "RJ",
+                "types": [
+                    "administrative_area_level_1",
+                    "political"
+                ]
+            },
+            {
+                "long_name": "Brasil",
+                "short_name": "BR",
+                "types": [
+                    "country",
+                    "political"
+                ]
+            },
+            {
+                "long_name": "20941-110",
+                "short_name": "20941-110",
+                "types": [
+                    "postal_code"
+                ]
+            }
+        ],
+        "adr_address": "RUA MELLO E SOUZA, 130 Loja - <span class=\"street-address\">Brasil</span> - <span class=\"extended-address\">São Cristóvão</span>, <span class=\"locality\">Rio de Janeiro</span> - <span class=\"region\">RJ</span>, <span class=\"postal-code\">20941-110</span>, <span class=\"country-name\">Brasil</span>",
+        "formatted_address": "RUA MELLO E SOUZA, 130 Loja - Brasil - São Cristóvão, Rio de Janeiro - RJ, 20941-110, Brasil",
+        "formatted_phone_number": "(21) 2580-0690",
+        "geometry": {
+            "location": {
+                "lat": -22.9052843,
+                "lng": -43.2116622
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": -22.9039157697085,
+                    "lng": -43.21026286970849
+                },
+                "southwest": {
+                    "lat": -22.9066137302915,
+                    "lng": -43.21296083029149
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+        "id": "f0726861fd9a1ef710d8eaf656560511d4782e23",
+        "international_phone_number": "+55 21 2580-0690",
+        "name": "Dj Freios",
+        "opening_hours": {
+            "open_now": false,
+            "periods": [
+                {
+                    "close": {
+                        "day": 1,
+                        "time": "1800"
+                    },
+                    "open": {
+                        "day": 1,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 2,
+                        "time": "1800"
+                    },
+                    "open": {
+                        "day": 2,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 3,
+                        "time": "1800"
+                    },
+                    "open": {
+                        "day": 3,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 4,
+                        "time": "1800"
+                    },
+                    "open": {
+                        "day": 4,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 5,
+                        "time": "1800"
+                    },
+                    "open": {
+                        "day": 5,
+                        "time": "0800"
+                    }
+                },
+                {
+                    "close": {
+                        "day": 6,
+                        "time": "1200"
+                    },
+                    "open": {
+                        "day": 6,
+                        "time": "0800"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "segunda-feira: 08:00 – 18:00",
+                "terça-feira: 08:00 – 18:00",
+                "quarta-feira: 08:00 – 18:00",
+                "quinta-feira: 08:00 – 18:00",
+                "sexta-feira: 08:00 – 18:00",
+                "sábado: 08:00 – 12:00",
+                "domingo: Fechado"
+            ]
+        },
+        "photos": [
+            {
+                "height": 2268,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101340802207125240123/photos\">Fernando Barbosa</a>"
+                ],
+                "photo_reference": "CmRaAAAARFwFVT1zfWns5avFmjDeNOuuhIZP9WGasPw2ZAzZ0QZkKxwBx7LPRrZ-QSP20RtU5avsw6iNqyMl11aSVLoTYWjHU9sKPerLtFiEdi1WUAVyXv82AoulPyyJkSyOBpSgEhBSBtGQe8ZS11yjfMRXhld6GhSBpepHF-VhDHgv3ZrvRz9kL-7XFQ",
+                "width": 4032
+            },
+            {
+                "height": 1280,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/109535480935035552287/photos\">Leonardo de Souza e Souza</a>"
+                ],
+                "photo_reference": "CmRaAAAAikvkfHAqqUfF3RrCunMkeuNvMctbEnt3PBdIK4KasW54ooB6-oNnoB3kn0F9x4XwJTjILQHoZ9EdJhqP09BpVGOhZXs0Lv94woxgiQhxUY3R_1db8sgc5lqscMtesVbmEhA93mTYYfiYDGo_qkq1tzbrGhSa5ONASRZM0ofCQMo9I5XwJrN5tw",
+                "width": 720
+            },
+            {
+                "height": 720,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/109535480935035552287/photos\">Leonardo de Souza e Souza</a>"
+                ],
+                "photo_reference": "CmRaAAAAXzLmt6mkGrAYHXa5KPTm99F8FFd-Z4wFfDIa4T77tbq5vapGCbSaRTqGsXI_8E44yaZXaMQAhW0jAkE6jSHvs49Aw2Hg8T2Rych00Tqap3Xnprz5aBZGt8hRsVePUfYlEhBsPDIj-yRJShfmsww9fWGrGhTZGZsLmwai2DwoNjZUVTE-ZPB8Cw",
+                "width": 1280
+            },
+            {
+                "height": 4128,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101272811376003456643/photos\">christiano kettrup de carvalho</a>"
+                ],
+                "photo_reference": "CmRaAAAAt5XMkl0oFOj3dmPC9fcWUD5GBAKB1admOItde5e0ja6uGpEN_JpCXDT1KTuvYo4Gajd5PV_L99o9lVfsfmraRSo1wmAjv5ZWS6Ke7rvBPg6_VGnzOGCOFyHT46srpHTSEhCc3eanq6DZLMe0A7iG7hr1GhRfrUTGCdO1hE44jWHVN5Lt4i5PGA",
+                "width": 3096
+            },
+            {
+                "height": 2268,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101340802207125240123/photos\">Fernando Barbosa</a>"
+                ],
+                "photo_reference": "CmRaAAAAUQcbXOm9Hws9wHYxYrvP446A3JNOPEW_MBPJS6dCFrOv6dsTOdNf5AzFoko1StttoKB8XS0EelBNp_KXE57R-p4xbJ_LSmerUkk6-DEqxstOg59e4D3Bb0llPWx7HNDyEhCwuln5AgQs4uh41jA39UDRGhTyhzlK3LWKi5WcTZiaL7lUdRiBZA",
+                "width": 4032
+            }
+        ],
+        "place_id": "ChIJg2x7xwJ_mQARTD0hCl9_eH4",
+        "plus_code": {
+            "compound_code": "3QVQ+V8 São Cristóvão, Rio de Janeiro - RJ, Brasil",
+            "global_code": "589R3QVQ+V8"
+        },
+        "rating": 4.6,
+        "reference": "ChIJg2x7xwJ_mQARTD0hCl9_eH4",
+        "reviews": [
+            {
+                "author_name": "Gabriel Pereira",
+                "author_url": "https://www.google.com/maps/contrib/102928622999796087090/reviews",
+                "language": "pt",
+                "profile_photo_url": "https://lh4.googleusercontent.com/-21cZkIr4hOw/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3regnyP-ODVwAvujtx-O9Hi44sYlsQ/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+                "rating": 1,
+                "relative_time_description": "4 meses atrás",
+                "text": "Achei bastante caro, orçamento ficou em 800 reais e após 3 meses meu freio voltou novamente a afundar como estava antes. Pode ter resolvido, porém temporariamente.",
+                "time": 1552937525
+            },
+            {
+                "author_name": "Debora Carmo",
+                "author_url": "https://www.google.com/maps/contrib/113175720952976757934/reviews",
+                "language": "pt",
+                "profile_photo_url": "https://lh4.googleusercontent.com/-UpUD5l7cExQ/AAAAAAAAAAI/AAAAAAAAO9s/FQhQyVCYKVY/s128-c0x00000000-cc-rp-mo/photo.jpg",
+                "rating": 5,
+                "relative_time_description": "6 meses atrás",
+                "text": "Especializada em freios, profissionais honestos e um bom preço. Fui atendida por um dos donos o Zé, muito atencioso e prestativo.\nSuper indico!",
+                "time": 1547298763
+            },
+            {
+                "author_name": "henrique santiago",
+                "author_url": "https://www.google.com/maps/contrib/108917789004454420149/reviews",
+                "language": "pt",
+                "profile_photo_url": "https://lh4.googleusercontent.com/-SnAoyEvmHQ8/AAAAAAAAAAI/AAAAAAAAIxs/Z8Z_dkTFEW8/s128-c0x00000000-cc-rp-mo/photo.jpg",
+                "rating": 5,
+                "relative_time_description": "3 meses atrás",
+                "text": "Resolvi um problema que ninguém resolvia.\nMuito bons profissionais,  recomendo",
+                "time": 1556395327
+            },
+            {
+                "author_name": "Manoel Nahub Brito",
+                "author_url": "https://www.google.com/maps/contrib/109331959559386229843/reviews",
+                "language": "pt",
+                "profile_photo_url": "https://lh4.googleusercontent.com/-vNOFpspeCj0/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcj3WE2G6wybPVqaG-_QMbXbuwoKg/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+                "rating": 5,
+                "relative_time_description": "7 meses atrás",
+                "text": "Oficina especializada em freios. Restauração de freios de carros antigos. Bom atendimento, serviço limpo e preço justo. Sem enrolação.",
+                "time": 1545171118
+            },
+            {
+                "author_name": "alexsandro ferreira da silva",
+                "author_url": "https://www.google.com/maps/contrib/109362369016187788043/reviews",
+                "language": "pt",
+                "profile_photo_url": "https://lh5.googleusercontent.com/-9LwtTJbysqk/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rfQ_gC9KUcKk--XbZOSm3VRu1-h5Q/s128-c0x00000000-cc-rp-mo-ba2/photo.jpg",
+                "rating": 5,
+                "relative_time_description": "2 meses atrás",
+                "text": "Ótimo atendimento",
+                "time": 1557316593
+            }
+        ],
+        "scope": "GOOGLE",
+        "types": [
+            "car_repair",
+            "point_of_interest",
+            "establishment"
+        ],
+        "url": "https://maps.google.com/?cid=9113173892152769868",
+        "user_ratings_total": 53,
+        "utc_offset": -180,
+        "vicinity": "RUA MELLO E SOUZA, 130 Loja, Brasil - São Cristóvão, Rio de Janeiro"
+    },
+    "status": "OK"
+}
